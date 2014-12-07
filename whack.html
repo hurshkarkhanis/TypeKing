@@ -354,7 +354,12 @@
 		    }
 		});
 	};
-
+	while(true){
+		if(error == 5){
+			alert("Game over. Your score was: " + score);
+			break;
+		}
+	}
 	function changeColor(){
 		
 		for(var i = 1; i <= 26; i++){
