@@ -1,0 +1,306 @@
+<head>
+	<title> Type King  </title>
+
+	<head>
+	<!font from Google fonts>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+        
+        <!accessing css from bootstrap cdn>
+        <!like a website template>
+
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+        
+        <!sets margins and font>
+
+        <style type="text/css">
+            body {
+                margin-left: 2.5%;
+                margin-right:0%;
+                font-family: "Open Sans", sans-serif;
+            }
+        </style>
+
+	<h1> Type King </h1>
+	<h3> Tap the lighted keys to increase your score!</h3>
+
+
+	<script>
+
+	var buttons;
+
+	window.onload = function() {
+
+		buttons = [
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false,
+			false	
+		];
+
+        window.setInterval(function(){
+		   changeColor();
+		}, 1000);
+
+
+    	document.addEventListener('keydown', function(event) {
+
+    		//alert(event.keyCode);
+
+    		var correct = new Audio('cut.wav');
+    		var score = 0 ; 
+
+
+		    switch(event.keyCode) {
+
+		    	//top row
+
+		    	case 81: //q 
+		    		if(buttons[1] == true)
+		    			document.getElementById("" + 1).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 87: //w
+		    		if(buttons[2] == true)
+		    			document.getElementById("" + 2).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 69: //e
+		    		if(buttons[3] == true)
+		    			document.getElementById("" + 3).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 82: //r
+		    		if(buttons[4] == true)
+		    			document.getElementById("" + 4).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 84: //t
+		    		if(buttons[5] == true)
+		    			document.getElementById("" + 6).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 89: //y
+		    		if(buttons[6] == true)
+		    			document.getElementById("" + 6).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 85: //u
+		    		if(buttons[7] == true)
+		    			document.getElementById("" + 7).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 73: //i
+		    		if(buttons[8] == true)
+		    			document.getElementById("" + 8).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 79: //o
+		    		if(buttons[9] == true)
+		    			document.getElementById("" + 9).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 80: //p
+		    		if(buttons[10] == true)
+		    			document.getElementById("" + 10).style.background = "green";
+		    			correct.play();
+		    		break;
+
+
+
+		    	//middle row
+
+		    	case 65: // a
+		    		if(buttons[11] == true)
+		    			document.getElementById("" + 11).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 83: // s
+		    		if(buttons[12] == true)
+		    			document.getElementById("" + 12).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 68: // d
+		    		if(buttons[13] == true)
+		    			document.getElementById("" + 13).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 70: // f
+		    		if(buttons[14] == true)
+		    			document.getElementById("" + 14).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 71: // g
+		    		if(buttons[15] == true)
+		    			document.getElementById("" + 15).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 72: // h
+		    		if(buttons[16] == true)
+		    			document.getElementById("" + 16).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 74: // j
+		    		if(buttons[17] == true)
+		    			document.getElementById("" + 17).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 75: // k
+		    		if(buttons[18] == true)
+		    			document.getElementById("" + 18).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 76: // l
+		    		if(buttons[19] == true)
+		    			document.getElementById("" + 19).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	default: 
+		    		break;
+
+
+		    	//bottom row
+
+
+		    	case 90: //z
+		    		if(buttons[20] == true)
+		    			document.getElementById("" + 20).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 88: //x
+		    		if(buttons[88] == true)
+		    			document.getElementById("" + 21).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 67: //c
+		    		if(buttons[22] == true)
+		    			document.getElementById("" + 22).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 86: //v
+		    		if(buttons[23] == true)
+		    			document.getElementById("" + 23).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 66: //b
+		    		if(buttons[24] == true)
+		    			document.getElementById("" + 24).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 78: //n
+		    		if(buttons[25] == true)
+		    			document.getElementById("" + 25).style.background = "green";
+		    			correct.play();
+		    		break;
+		    	case 77: //m
+		    		if(buttons[26] == true)
+		    			document.getElementById("" + 26).style.background = "green";
+		    			correct.play();
+		    		break;
+
+		    }
+		});
+	};
+
+	function changeColor(){
+		
+		for(var i = 1; i <= 26; i++){
+			document.getElementById("" + i).style.background = "gray";
+			buttons[i] = false;
+		}
+
+		var b = Math.floor(Math.random() * 26);
+
+		document.getElementById("" + b).style.background = "red";
+		setTimeout(10);
+
+        
+
+		buttons[b] = true;
+
+	}
+        
+	</script>
+	
+</head>
+<body>
+	<button id="1"> <h1> q </button>
+	<button id="2"> <h1> w </button>
+	<button id="3"> <h1> e </button>
+	<button id="4"> <h1> r </button>
+	<button id="5"> <h1> t </button>
+	<button id="6"> <h1> y </button>
+	<button id="7"> <h1> u </button>
+	<button id="8"> <h1> i </button>
+	<button id="9"> <h1> o </button>
+	<button id="10"><h1> p </button>
+
+	</body>
+
+	<br>
+
+	&nbsp;
+	<button id="11"> <h1> a </button>
+	<button id="12"> <h1> s </button>
+	<button id="13"> <h1> d </button>
+	<button id="14"> <h1> f </button>
+	<button id="15"> <h1> g </button>
+	<button id="16"> <h1> h </button>
+	<button id="17"> <h1> j </button>
+	<button id="18"> <h1> k </button>
+	<button id="19"> <h1> l </button>
+
+	</br>
+
+	&nbsp;&nbsp;
+	<button id="20"> <h1> z </button>
+	<button id="21"> <h1> x </button>
+	<button id="22"> <h1> c </button>
+	<button id="23"> <h1> v </button>
+	<button id="24"> <h1> b </button>
+	<button id="25"> <h1> n </button>
+	<button id="26"> <h1> m </button>
+
+	</h1>
+
+	</body>
+
+	<br>
+	<br>
+
+
+
+	<style type="text/css">
+		button {
+			width: 150px;
+			height: 150px;
+			background-color: gray;
+			border: gray solid 1px;
+		}
+	</style>
+</body>
+</html>
