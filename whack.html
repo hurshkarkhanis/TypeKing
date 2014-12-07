@@ -85,6 +85,8 @@
 		    			document.getElementById("" + 1).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -95,6 +97,8 @@
 		    			document.getElementById("" + 2).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -105,6 +109,8 @@
 		    			document.getElementById("" + 3).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -115,6 +121,8 @@
 		    			document.getElementById("" + 4).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -125,6 +133,8 @@
 		    			document.getElementById("" + 6).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -135,6 +145,8 @@
 		    			document.getElementById("" + 6).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -145,6 +157,8 @@
 		    			document.getElementById("" + 7).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -155,6 +169,8 @@
 		    			document.getElementById("" + 8).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -165,6 +181,8 @@
 		    			document.getElementById("" + 9).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -175,6 +193,8 @@
 		    			document.getElementById("" + 10).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -190,6 +210,8 @@
 		    			document.getElementById("" + 11).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -200,6 +222,8 @@
 		    			document.getElementById("" + 12).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -210,6 +234,8 @@
 		    			document.getElementById("" + 13).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -220,6 +246,8 @@
 		    			document.getElementById("" + 14).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -230,6 +258,8 @@
 		    			document.getElementById("" + 15).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -240,6 +270,10 @@
 		    			document.getElementById("" + 16).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			document.getElementById("score").innerHTML+=score;
+
+		    			var tmpscore = document.getElementById("score");
+		    			tmpscore.appendChild(score);
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -250,6 +284,10 @@
 		    			document.getElementById("" + 17).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			document.getElementById("score").innerHTML+=score;
+
+		    			var tmpscore = document.getElementById("score");
+		    			tmpscore.appendChild(score);
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -259,7 +297,11 @@
 		    		if(buttons[18] == true && event.keyCode == 75){
 		    			document.getElementById("" + 18).style.background = "green";
 		    			correct.play();
-		    			score++
+		    			score++;
+		    			document.getElementById("score").innerHTML+=score;
+
+		    			var tmpscore = document.getElementById("score");
+		    			tmpscore.appendChild(score);
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -270,9 +312,12 @@
 		    			document.getElementById("" + 19).style.background = "green";
 		    			correct.play();
 		    			scrore++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
+
 		    		}
 		    		break;
 		    	default: 
@@ -287,6 +332,8 @@
 		    			document.getElementById("" + 20).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    		}
@@ -296,6 +343,8 @@
 		    			document.getElementById("" + 21).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -306,6 +355,8 @@
 		    			document.getElementById("" + 22).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    		}
@@ -315,6 +366,8 @@
 		    			document.getElementById("" + 23).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -325,6 +378,8 @@
 		    			document.getElementById("" + 24).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -335,6 +390,8 @@
 		    			document.getElementById("" + 25).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -345,6 +402,8 @@
 		    			document.getElementById("" + 26).style.background = "green";
 		    			correct.play();
 		    			score++
+		    			pTag = document.getElementById("score");
+		    			pTag.innerHTML = "Score: " + score;
 		    		} else {
 		    			wrong.play();
 		    			error++
@@ -354,12 +413,9 @@
 		    }
 		});
 	};
-	while(true){
-		if(error == 5){
-			alert("Game over. Your score was: " + score);
-			break;
-		}
-	}
+
+	document.write("score: " + score)
+
 	function changeColor(){
 		
 		for(var i = 1; i <= 26; i++){
@@ -377,6 +433,9 @@
 		buttons[b] = true;
 
 	}
+
+
+
         
 	</script>
 	
@@ -426,6 +485,7 @@
 	<br>
 	<br>
 
+	<p id="score"></p>
 
 
 	<style type="text/css">
@@ -436,5 +496,10 @@
 			border: gray solid 1px;
 		}
 	</style>
+
+	<script type="text/javascript">
+
+
+	</script>
 </body>
 </html>
